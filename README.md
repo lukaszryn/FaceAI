@@ -4,7 +4,7 @@ Język programowania: Python
 
 Biblioteki: TensorFlow, Keras, NumPy, Matplotlib, scikit-learn
 
-Funkcja: Klasyfikacja chorób skóry twarzy za pomocą sieci neuronowej konwolucyjnej (CNN)
+Funkcje: Szybkie i dokładne przetwarzanie obrazów skóry twarzy w celu wykrywania potencjalnych chorób. Użycie zaawansowanych algorytmów sztucznej inteligencji do klasyfikacji zidentyfikowanych stanów skóry. Prosty i przyjazny interfejs użytkownika, zaprojektowany z myślą o łatwości użytkowania przez specjalistów medycznych. Oparte na najnowszych badaniach modele AI, oferujące wysoką dokładność w diagnozie chorób skórnych.
 
 Wejście: Zbiór danych obrazów twarzy z etykietami
 
@@ -27,3 +27,4 @@ Macierz pomyłek: Generowanie i wyświetlanie macierzy pomyłek, co umożliwia g
 Raport klasyfikacji: Tworzenie raportu klasyfikacji z precyzją, pełnością (recall) i wynikiem F1 dla każdej z klas diagnoz.
 
 Przykładowe przewidywania: Wyświetlenie przykładów obrazów testowych wraz z ich prawdziwymi i przewidywanymi etykietami, co daje wgląd w skuteczność modelu.
+
