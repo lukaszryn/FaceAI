@@ -1,30 +1,26 @@
-FaceAI to zaawansowany system oparty na sztucznej inteligencji, skoncentrowany na analizie obrazów twarzy w celu wykrywania i diagnozowania różnorodnych stanów i chorób skóry twarzy. Celem jest zapewnienie szybkiej i dokładnej metody diagnostyki, wspomagającej dermatologów i poprawiającej dostępność wysokiej jakości opieki dermatologicznej dla problemów skórnych twarzy.
+FaceAI is an advanced artificial intelligence-based system focused on analysing facial images to detect and diagnose a variety of facial skin conditions and diseases. The aim is to provide a fast and accurate method of diagnosis, assisting dermatologists and improving the availability of quality dermatological care for facial skin problems.
 
-Język programowania: Python
+Programming language: Python
+Libraries: TensorFlow, Keras, NumPy, Matplotlib, scikit-learn
 
-Biblioteki: TensorFlow, Keras, NumPy, Matplotlib, scikit-learn
+Features: Fast and accurate processing of facial skin images to detect potential diseases. Use of advanced artificial intelligence algorithms to classify identified skin conditions. Simple and user-friendly user interface, designed for ease of use by medical professionals. AI models based on the latest research, offering high accuracy in the diagnosis of skin conditions.
 
-Funkcje: Szybkie i dokładne przetwarzanie obrazów skóry twarzy w celu wykrywania potencjalnych chorób. Użycie zaawansowanych algorytmów sztucznej inteligencji do klasyfikacji zidentyfikowanych stanów skóry. Prosty i przyjazny interfejs użytkownika, zaprojektowany z myślą o łatwości użytkowania przez specjalistów medycznych. Oparte na najnowszych badaniach modele AI, oferujące wysoką dokładność w diagnozie chorób skórnych.
+Input: Facial image dataset with labels
 
-Wejście: Zbiór danych obrazów twarzy z etykietami
+Output: Model accuracy assessment, confusion matrix, classification report, accuracy and loss visualisations and sample images with predictions
 
-Wyjście: Ocena dokładności modelu, macierz pomyłek, raport klasyfikacji, wizualizacje dokładności i straty oraz przykładowe obrazy z przewidywaniami
+Description of script operation:
 
-Opis działania skryptu:
+Loading the model: The script starts by loading the trained weights into the CNN model that performed best on the validation data.
 
-Ładowanie modelu: Skrypt zaczyna od wczytania wytrenowanych wag do modelu CNN, które osiągnęły najlepsze wyniki na danych walidacyjnych.
+Model evaluation: The model is evaluated on a test dataset. Evaluation results, including accuracy and loss, are displayed on the console.
+Predictions: Based on the model, predictions are made for the images in the test set. The script assigns the most likely diagnosis class for each image.
 
-Ocena modelu: Model jest oceniany na zbiorze danych testowych. Wyniki oceny, w tym dokładność i strata, są wyświetlane na konsoli.
+True labels: Preparation of a vector of true labels using data from the test generator.
 
-Predykcje: Na podstawie modelu wykonane są predykcje dla obrazów w zbiorze testowym. Skrypt przypisuje najbardziej prawdopodobną klasę diagnozy dla każdego obrazu.
+Visualisation of training history: Presentation of accuracy and loss graphs for training and validation data to assess the progress of model learning over time.
 
-Prawdziwe etykiety: Przygotowanie wektora prawdziwych etykiet z użyciem danych z generatora testowego.
+Confusion matrix: Generation and display of a confusion matrix, allowing a graphical representation of classification results and identification of classes that are frequently confused by the model.
 
-Wizualizacja historii treningu: Prezentacja wykresów dokładności i straty dla danych treningowych i walidacyjnych, co pozwala na ocenę postępów uczenia modelu w czasie.
-
-Macierz pomyłek: Generowanie i wyświetlanie macierzy pomyłek, co umożliwia graficzne przedstawienie wyników klasyfikacji i identyfikację klas, które są często mylone przez model.
-
-Raport klasyfikacji: Tworzenie raportu klasyfikacji z precyzją, pełnością (recall) i wynikiem F1 dla każdej z klas diagnoz.
-
-Przykładowe przewidywania: Wyświetlenie przykładów obrazów testowych wraz z ich prawdziwymi i przewidywanymi etykietami, co daje wgląd w skuteczność modelu.
-
+Classification report: Create a classification report with precision, completeness (recall) and F1 score for each class of diagnoses.
+Sample predictions: Displaying examples of test images with their true and predicted labels, giving insight into the effectiveness of the model.
